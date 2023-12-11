@@ -1,19 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Display from './Display'
+import Add from './components/Add'
+import {store} from './store/Store'
 import { Provider } from 'react-redux';
-import store from './Store';
-import AddUserForm from './AddUser';
-import Update from './Update'
-import Edit from './Edit'
+import Disp from './components/Disp'
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-      <Display/>
-      <AddUserForm/>
-      <Update/>
-      <Edit/>
+      {/* <Add/> */}
+      <Disp/>
     </div>
     </Provider>
   );
